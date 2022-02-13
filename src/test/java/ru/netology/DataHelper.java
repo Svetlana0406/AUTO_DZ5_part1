@@ -14,8 +14,8 @@ public class DataHelper {
     }
 
 
-    public static String getNewDate(int plusDays) {
-        return LocalDate.now().plusDays(plusDays).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
+    public static String generateDate(int days) {
+        return LocalDate.now().plusDays(days).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
 
     public static String getNewName() {
